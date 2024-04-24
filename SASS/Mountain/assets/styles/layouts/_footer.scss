@@ -30,6 +30,12 @@ footer {
       border-radius: 4px;
       // *autocomplete="off" a mettre en html pour retirer l'auto complétion de l'input.
       resize: none;
+      padding: 7px;
+
+      &:focus {
+        outline: none;
+        font-size: 1rem;
+      }
     }
     .submit-container {
       display: flex;

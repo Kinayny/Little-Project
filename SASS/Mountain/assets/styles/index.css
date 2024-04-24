@@ -393,6 +393,12 @@ footer form textarea {
   border: 1px solid rgb(209, 209, 209);
   border-radius: 4px;
   resize: none;
+  padding: 7px;
+}
+footer form input[type=text]:focus,
+footer form textarea:focus {
+  outline: none;
+  font-size: 1rem;
 }
 footer form .submit-container {
   display: -webkit-box;
