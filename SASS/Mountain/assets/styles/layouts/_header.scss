@@ -25,6 +25,16 @@ header {
       @include title;
       font-size: 4rem;
       letter-spacing: 6px;
+
+      @media screen and (max-width: 705px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 690px){
+        font-size: 2.4rem;
+      }
+      @media screen and (max-width: 670px){
+        font-size: 2rem;
+      }
     }
     p {
       margin: 40px auto 60px;
@@ -74,6 +84,11 @@ header {
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        @media screen and (max-width: 705px){
+          font-size: 0.5rem;
+        }
+
         &:first-child {
           background: $white1;
           color: $black1;
@@ -91,6 +106,10 @@ header {
       min-width: 300px;
       justify-content: space-around;
       margin-right: 10px;
+
+      @media screen and (max-width: 720px){
+        display: none;
+      }
 
       li {
         transition: 0.15s;
