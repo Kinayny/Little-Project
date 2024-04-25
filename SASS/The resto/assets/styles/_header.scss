@@ -1,0 +1,34 @@
+.gold {
+    @include gold;
+}
+
+.whity {
+    @include whity;
+}
+
+.img-header {
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    h3 {
+        font-family: Allura Regular, sans-serif;
+        font-size: 2rem;
+        color: white;
+        
+    }
+    
+    
+    .nav-left {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        color: white;
+        font-family: Roboto Light, sans-serif;
+        text-transform: uppercase;
+    }
+    font-size: .8rem;
+}
