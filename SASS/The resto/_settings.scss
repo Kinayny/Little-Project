@@ -1,0 +1,33 @@
+
+
+// ************* GENERAL SETTINGS***********
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ************************ BODY ***********************
+body {
+    background-color: #384E77;
+}
+
+// *********** MARK CONSTRUCTION******
+
+header {
+    border: 1px solid yellow;
+    padding: 9px;
+    div {
+        border: 1px solid red;
+        padding: 2px;
+        p,h2 {
+            border: 1px solid greenyellow
+        }
+        padding: 2px;
+        h1 {
+            border: 1px solid orange;
+            padding: 2px;
+            
+        }
+    }
+}
