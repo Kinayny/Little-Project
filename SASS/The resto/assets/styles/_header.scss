@@ -1,0 +1,28 @@
+
+
+header {
+    background: url("../img/bg-slider-06.jpg") center/cover;
+    height: 100vh;
+    display: flex;
+}
+
+.logo {
+    color: $whity;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    width: 100%;
+}
+nav ul{
+    color: $whity;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.title {
+    justify-content: center;
+    align-items: center;
+}
+
