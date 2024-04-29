@@ -3,26 +3,62 @@
 header {
     background: url("../img/bg-slider-06.jpg") center/cover;
     height: 100vh;
+    color: $whity;
+}
+
+nav {
+    width:75%;
+    height: 25vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-family: $font2;
 }
 
 .logo {
-    color: $whity;
+    font-family: $font1;
+    color: $goldy;
+    font-size: 3rem;
+
 }
-nav {
+.left-part ul{
     display: flex;
-    justify-content: space-around;
-    height: 20vh;
+
+}
+.left-part ul li {
     width: 100%;
+    margin-right: 70px;
 }
-nav ul{
-    color: $whity;
+
+.right-part ul{
     display: flex;
-    justify-content: space-between;
-    
 }
+
+.right-part ul li{
+    margin-right: 25px;
+}
+
 .title {
-    justify-content: center;
-    align-items: center;
+text-align: center;
+margin-top: 50px;
+}
+
+.title h1 {
+    font-family: $font2;
+    font-size: 5rem;
+}
+.title h2{
+    font-family: $font1;
+    font-size: 3rem;
+    color: $goldy;
+}
+
+.title p {
+    font-family: $font3;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
 }
 

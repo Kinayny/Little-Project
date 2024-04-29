@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Allura";
-  src: url(./assets/fonts/Allura-Regular.ttf);
+  src: url(../fonts/Allura-Regular.ttf);
 }
 @font-face {
   font-family: "Poppins";
-  src: url(./assets/fonts/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: "Roboto";
-  src: url(./assets/fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
 }
 * {
   margin: 0;
@@ -21,40 +21,72 @@
 header {
   background: url("../img/bg-slider-06.jpg") center/cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo {
   color: rgb(199, 198, 198);
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 20vh;
-  width: 100%;
-}
-
-nav ul {
-  color: rgb(199, 198, 198);
+  width: 75%;
+  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-family: Poppins, sans-serif;
+}
+
+.logo {
+  font-family: Allura, cursif;
+  color: rgb(154, 105, 20);
+  font-size: 3rem;
+}
+
+.left-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-part ul li {
+  width: 100%;
+  margin-right: 70px;
+}
+
+.right-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-part ul li {
+  margin-right: 25px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+}
+
+.title h2 {
+  font-family: Allura, cursif;
+  font-size: 3rem;
+  color: rgb(154, 105, 20);
+}
+
+.title p {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 3px;
 }/*# sourceMappingURL=index.css.map */
