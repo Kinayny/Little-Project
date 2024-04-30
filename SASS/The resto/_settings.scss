@@ -18,8 +18,26 @@ $font3: Roboto, sans-serif;
 
 // ****************** color ***********
 
-$whity: rgb(199, 198, 198);
-$goldy: rgb(154, 105, 20);
+$whity: #eee;
+$black: #21201e;
+$grey: rgb(182, 182, 182);
+$goldy: rgb(166, 114, 69);
+
+
+
+// ************ MIXIN ******************
+
+@mixin childCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin alignChildren($space){
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
 // ******* GLOBAL SETTINGS********
 
 * {
@@ -27,4 +45,10 @@ $goldy: rgb(154, 105, 20);
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: $font3;
+  background: $black;
 }
