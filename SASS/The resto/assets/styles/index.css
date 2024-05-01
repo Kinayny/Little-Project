@@ -119,4 +119,84 @@ nav .nav-icons i:hover {
   font-size: 0.75rem;
   letter-spacing: 6px;
   font-weight: 100;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+}
+.section1 .left-part {
+  margin: 15px;
+  padding: 30px 15px;
+  border: 1px dashed rgb(166, 114, 69);
+}
+.section1 .left-part h2 {
+  font-family: Allura, cursif;
+  color: rgb(166, 114, 69);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section1 .left-part h3 {
+  margin: -12px;
+  font-family: Poppins, sans-serif;
+}
+.section1 .left-part img {
+  margin: 26px;
+}
+.section1 .left-part img:nth-of-type(2) {
+  height: 70px;
+  border-radius: 150px;
+  margin-bottom: 8px;
+}
+.section1 .left-part h4 {
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+}
+.section1 .left-part h5 {
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+}
+.section1 .right-part {
+  background: url("../img/store-01.jpg") center/cover;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eee;
+}
+.section1 .left-part {
+  margin: 15px;
+  padding: 30px 15px;
+  border: 1px dashed rgb(166, 114, 69);
+}
+.section1 .left-part h2 {
+  font-family: Allura, cursif;
+  color: rgb(166, 114, 69);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section1 .left-part h3 {
+  margin: -12px;
+  font-family: Poppins, sans-serif;
+}
+.section1 .left-part img {
+  margin: 26px;
+}
+.section1 .left-part img:nth-of-type(2) {
+  height: 70px;
+  border-radius: 150px;
+  margin-bottom: 8px;
+}
+.section1 .left-part h4 {
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+}
+.section1 .left-part h5 {
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+}
+.section1 .right-part {
+  background: url("../img/store-01.jpg") center/cover;
 }/*# sourceMappingURL=index.css.map */
