@@ -79,7 +79,9 @@
         > p {
             color: $goldy;
             font-weight: 600;
-      l
+            display: grid;
+            height: 100%;
+            align-items: center;
             // display: flex;
             // align-items: center;
             font-size: 1.1rem;
