@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background: rgb(34,36,77);
+    height: 100vh;
+    
+}
+
+
+.box {
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.box label {
+    display: block;
+    background: turquoise;
+    height: 150px;
+    width: 45px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 30px;
+}
+
+.box label::after {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: rgb(181, 14, 114);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(240, 122, 11, 0.233);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: right 0.2s ease-in-out;
+    top: -11px;
+    right: 50%;
+    transform: translateX(+50%);
+
+}
+
+input:checked~label{
+    background:rgb(205, 237, 20);
+    transition: 0.3s;
+}
+
+input:checked~label::after {
+    background: rgb(92, 228, 33);
+    top: 111px;
+}
+
+.box input{
+    display: none;
+}
+
