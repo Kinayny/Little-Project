@@ -9,6 +9,9 @@
     max-width: 1050px;
     margin: 0 auto;
 
+    @media screen and (max-width: 850px){
+      grid-template-columns: 1fr;
+  }
     .hours {
       padding: 24px;
       background: black;
@@ -74,6 +77,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 680px){
+          grid-template-columns: 1fr;
+      }
 
         > * {
           padding: 10px 0;

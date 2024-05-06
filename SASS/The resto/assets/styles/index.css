@@ -41,12 +41,16 @@ nav {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  nav {
+    grid-template-columns: 50% 10% 40%;
+  }
+}
 nav .logo {
   font-family: Allura, cursif;
   font-weight: 100;
   font-size: 2rem;
   text-align: left;
-  padding: 0 30px;
 }
 nav ul {
   display: -webkit-box;
@@ -59,9 +63,15 @@ nav ul {
       justify-content: space-around;
   text-transform: uppercase;
   font-size: 0.7rem;
+  padding: 0 30px;
 }
 nav ul li {
   cursor: pointer;
+}
+@media screen and (max-width: 680px) {
+  nav ul {
+    visibility: hidden;
+  }
 }
 nav .nav-icons {
   display: -webkit-box;
@@ -112,6 +122,12 @@ nav .nav-icons i:hover {
   margin-top: -28px;
   font-family: Poppins, sans-serif;
 }
+@media screen and (max-width: 680px) {
+  .header-text div h1 {
+    font-size: 2rem;
+    margin-top: -15px;
+  }
+}
 .header-text div img {
   height: 27px;
   margin: 32px 0;
@@ -127,6 +143,11 @@ nav .nav-icons i:hover {
   grid-template-columns: 50% 50%;
   background: #eee;
 }
+@media screen and (max-width: 680px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+}
 .section1 .left-part {
   margin: 15px;
   padding: 30px 15px;
@@ -160,6 +181,11 @@ nav .nav-icons i:hover {
 }
 .section1 .right-part {
   background: url("../img/store-01.jpg") center/cover;
+}
+@media screen and (max-width: 680px) {
+  .section1 .right-part {
+    display: none;
+  }
 }
 
 .section1 {
@@ -167,6 +193,11 @@ nav .nav-icons i:hover {
   grid-template-columns: 50% 50%;
   background: #eee;
 }
+@media screen and (max-width: 680px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+}
 .section1 .left-part {
   margin: 15px;
   padding: 30px 15px;
@@ -200,6 +231,11 @@ nav .nav-icons i:hover {
 }
 .section1 .right-part {
   background: url("../img/store-01.jpg") center/cover;
+}
+@media screen and (max-width: 680px) {
+  .section1 .right-part {
+    display: none;
+  }
 }
 
 .section2 {
@@ -238,6 +274,13 @@ nav .nav-icons i:hover {
   margin: 30px auto;
   min-width: 500px;
 }
+@media screen and (max-width: 680px) {
+  .section2 ul {
+    min-width: 200px;
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
 .section2 ul li {
   border-bottom: 1px solid rgb(182, 182, 182);
   padding-bottom: 8px;
@@ -255,6 +298,11 @@ nav .nav-icons i:hover {
   grid-template-columns: 50% 50%;
   z-index: 100;
   position: relative;
+}
+@media screen and (max-width: 680px) {
+  .section2 .meals {
+    grid-template-columns: 1fr;
+  }
 }
 .section2 .meals .meal {
   display: grid;
@@ -314,6 +362,11 @@ nav .nav-icons i:hover {
   background: #eee;
   max-width: 1050px;
   margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  .section3 .form-content {
+    grid-template-columns: 1fr;
+  }
 }
 .section3 .form-content .hours {
   padding: 24px;
@@ -383,6 +436,11 @@ nav .nav-icons i:hover {
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 680px) {
+  .section3 .form-content .form-infos .form-inputs {
+    grid-template-columns: 1fr;
+  }
+}
 .section3 .form-content .form-infos .form-inputs > * {
   padding: 10px 0;
   margin: 10px;
@@ -410,6 +468,11 @@ nav .nav-icons i:hover {
 
 .section4 {
   padding: 50px 20px 90px;
+}
+@media screen and (max-width: 850px) {
+  .section4 {
+    display: none;
+  }
 }
 .section4 .events-container {
   min-width: 1000px;
@@ -601,6 +664,11 @@ footer {
   padding: 65px 32px;
   color: #eee;
 }
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+  }
+}
 footer .footer-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -622,10 +690,20 @@ footer .footer-content .left-part p {
   font-size: 0.9rem;
   color: rgb(182, 182, 182);
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
+}
 footer .footer-content .right-part {
   padding-left: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    padding-left: 20px;
+  }
 }
 footer .footer-content .right-part h3 {
   font-size: 0.85rem;
@@ -637,11 +715,21 @@ footer .footer-content .right-part input {
   padding: 7px 13px;
   width: 250px;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part input {
+    width: 150px;
+  }
+}
 footer .footer-content .right-part .follow-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part .follow-us h3 {
+    display: none;
+  }
 }
 footer .footer-content .right-part .follow-us ul {
   display: -webkit-box;
