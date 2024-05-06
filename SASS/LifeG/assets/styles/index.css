@@ -1,5 +1,59 @@
+@charset "UTF-8";
 body {
+  background: url("../../assets/img/bgclair.jpg") center/cover no-repeat;
   height: 100vh;
-  width: 100vw;
-  background: rgb(104, 104, 221);
+  width: 100%;
+  list-style: none;
+  color: rgb(229, 229, 229);
+  margin: 0 auto;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section .window {
+  min-height: 250px;
+  min-width: 250px;
+  background: transparent;
+  margin: 20px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 7px 0px white;
+          box-shadow: 0 0 7px 0px white;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section .window a {
+  display: inline-block;
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 2px 3px rgb(123, 205, 250);
+          box-shadow: 0 2px 3px rgb(123, 205, 250);
+}
+section .window a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section .window .card {
+  min-height: 150px;
+  width: 80%;
+  border-radius: 30px;
+  margin: 15px auto;
+}
+section .window .impot {
+  background: url(../img/impots-gouv-4UcX1y.png) left/cover;
+}
+section .window .ameli {
+  background: url(../img/téléchargement.png) center/cover;
 }/*# sourceMappingURL=index.css.map */
