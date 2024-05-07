@@ -1,0 +1,24 @@
+// ********** GLOBAL ***********
+
+
+
+// ********** FONT ***********
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+$font1: Poppins, sans-serif;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font1;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
