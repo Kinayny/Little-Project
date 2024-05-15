@@ -15,8 +15,8 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 
 
-echo "Bonjour: ".$name;
-echo " ton email est: ".$email;
+echo "Hello: ".$name;
+echo " your email is: ".$email;
 ?>
     
 </body>
