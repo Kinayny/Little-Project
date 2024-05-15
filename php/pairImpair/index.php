@@ -21,7 +21,7 @@
 
     // ou : 
 
-    $n = readline("Enter a number: ");
+    $n = (int)readline("Enter a number: ");
 
     if (($n %2) == 0) {
         printf("$d is pair", $n);
