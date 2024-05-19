@@ -29,6 +29,17 @@
             };
         }
 
+
+        // operateur ternaire :
+
+        // (condition) ? True : False
+
+        // $age = 12;
+        
+        // $resultat = ($age >= 18) ? "majeur" : "Mineur";
+        
+        // echo"Tu es: ".$resultat.".";
+
 ?>
 
 
