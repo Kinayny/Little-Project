@@ -3,10 +3,10 @@
     src: url(./font/Nunito-VariableFont_wght.ttf);
 }
 
-root {
+:root {
 --white: #fff;
 --light: #f3f4ee;
---fuscha: #hsl(334, 94%, 57%);
+--fuscha: hsl(334, 94%, 57%);
 --desaturate-fuscha: hsla(334, 94%,57%,0.1);
 --desaturate-fuscha-2: hsla(184, 46%,57%,0.15);
 --cyan:hsl(184, 46%, 57%);
@@ -55,7 +55,123 @@ root {
 html {
     font-size: 0.9rem;
 }
-
+/* ******************** BODY ******************* */
 body {
     background: var(--light);
+    color: var(--text-color-primary);
+    height: 100vh;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--text-color-primary);
+}
+
+.material-icons-sharp {
+    vertical-align: middle;
+}
+/* ************** TEXT class color *************** */
+.text-primary {
+    color: var(--text-color-primary);
+}
+.text-secondary {
+    color: var(--text-color-secondary);
+}
+.text-third {
+    color: var(--text-color-third);
+}
+/* ************ DASHBOARD CONTAINER *************** */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-areas: 'sidebar main extrabar';
+    gap: 4rem;
+    height: 100%;
+}
+
+/* ********************* MAIN SIDE BAR ********************** */
+.main-sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    width: 320px;   
+    padding: 20px 0 16px;
+}
+
+.main-sidebar .aside-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ******************* LOGO ****************** */
+.aside-header .brand{
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+.brand img {
+    width: 48px;
+    height: 48px;
+}
+
+.brand h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+/* ******************* UL LI *********************  */
+.main-sidebar .sidebar {
+   position: relative;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   padding-top: 4rem;
+   width: 100%;
+}
+
+.sidebar .list-items {
+    width: 100%;
+}
+
+.list-items li:last-child {
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+}
+
+.list-items .item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    padding: 16px -4rem 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-items .item a:hover {
+    color: var(--fuscha);
+    transform: translateX(5%);
+}
+
+
+
+
+/* ***************** MAIN CONTAINER ********************** */
+.main-container{
+    grid-area: main;
+}
+
+.extrabar {
+    grid-area: extrabar;
 }
