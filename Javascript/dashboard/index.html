@@ -13,6 +13,7 @@
 <body>
 
     <div class="dashboard-container">
+      <!-- ********************* SIDE BAR MAIN ***************** -->
       <div class="main-sidebar">
         <div class="aside-header">
           <div class="brand">
@@ -20,8 +21,8 @@
             <h3>Mylife</h3>
           </div>
         </div> 
+      <!-- ********************* SIDE BAR LIST ITEM ***************** -->
 
-<!-- *********************** SIDE BAR LIST ITEM ***************** -->
         <div class="sidebar">
           <ul class="list-items">
             <li class="item">
@@ -35,9 +36,41 @@
             <li class="item">
               <a href="#">
                 <span class="material-icons-sharp">
-                  dashboard
+                  people
                 </span>
-                <span>Tableaux de bord</span>
+                <span>Client</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <span class="material-icons-sharp">
+                  circle
+                </span>
+                <span>Commande</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <span class="material-icons-sharp">
+                  circle
+                </span>
+                <span>Statistique</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <span class="material-icons-sharp">
+                  circle
+                </span>
+                <span>Produits</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <span class="material-icons-sharp">
+                  add
+                </span>
+                <span>Add products</span>
               </a>
             </li>
             <li class="item">
@@ -45,7 +78,16 @@
                 <span class="material-icons-sharp">
                   message
                 </span>
-                <span>Messagerie</span>
+                <span>Messagerie </span>
+                <span class="message-count">22</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <span class="material-icons-sharp">
+                  settings
+                </span>
+                <span>Settings</span>
               </a>
             </li>
             <li class="item">
@@ -67,7 +109,97 @@
           </ul>
         </div>
       </div>
-      <div class="main-container"></div>
+      <!-- ******************* MAIN CONTAINER ***************** -->
+      <div class="main-container">
+        <h1 class="main-title"> Dashboard</h1>
+
+        <div class="insights">
+          <div class="card">
+            <div class="card-container">
+              <div class="card-header">
+                <span class="material-icons-sharp">
+                  bar_chart
+                  </span>
+              </div>
+              <!-- ????????????????? CIRCLE card1 ?????????????????? -->
+              <div class="card-body">
+                <div class="card-info">
+                  <h3>Ventes totales</h3>
+                  <h1>.03M</h1>
+                </div>
+                <div class="card-progress">
+                  <svg width="96" height="96" class="stroke-yellow">
+                    <!-- on dessine le cercle -->
+                    <circle id="circle1" cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="pourcentage">
+                    <p>23%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small>Sur les 48h precedentes</small>
+              </div>
+            </div>
+          </div>
+          <!-- ????????????????? CIRCLE card2 ?????????????????? -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-header">
+                <span class="material-icons-sharp">
+                  bar_chart
+                  </span>
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <h3>Ventes totales</h3>
+                  <h1>8M</h1>
+                </div>
+                <div class="card-progress">
+                  <svg width="96" height="96" class="stroke-fuscha">
+                    <!-- on dessine le cercle -->
+                    <circle id="circle2" cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="pourcentage">
+                    <p>47%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small>Sur les 8h precedentes</small>
+              </div>
+            </div>
+          </div>
+          <!-- ????????????????? CIRCLE CARD 3 ?????????????????? -->
+          <div class="card">
+            <div class="card-container">
+              <div class="card-header">
+                <span class="material-icons-sharp">
+                  bar_chart
+                  </span>
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <h3>Ventes totales</h3>
+                  <h1>23M</h1>
+                </div>
+                <div class="card-progress">
+                  <svg width="96" height="96" class="stroke-cyan">
+                    <!-- on dessine le cercle -->
+                    <circle id="circle3" cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="pourcentage">
+                    <p>97%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small>Sur les 4h precedentes</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="extrabar"></div>
     </div>
     
