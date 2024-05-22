@@ -1,108 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style-responsive.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-responsive.css" />
+  </head>
+  <body>
     <div class="dashboard-container">
       <!-- ********************* SIDE BAR MAIN ***************** -->
       <div class="main-sidebar">
         <div class="aside-header">
           <div class="brand">
-            <img  class="logo" src="./img/ny-logo.png">
+            <img class="logo" src="./img/ny-logo.png" />
             <h3>Mylife</h3>
           </div>
-        </div> 
-      <!-- ********************* SIDE BAR LIST ITEM ***************** -->
+        </div>
+        <!-- ********************* SIDE BAR LIST ITEM ***************** -->
 
         <div class="sidebar">
           <ul class="list-items">
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  dashboard
-                </span>
+                <span class="material-icons-sharp"> dashboard </span>
                 <span>Tableaux de bord</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  people
-                </span>
+                <span class="material-icons-sharp"> people </span>
                 <span>Client</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  circle
-                </span>
+                <span class="material-icons-sharp"> circle </span>
                 <span>Commande</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  circle
-                </span>
+                <span class="material-icons-sharp"> circle </span>
                 <span>Statistique</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  circle
-                </span>
+                <span class="material-icons-sharp"> circle </span>
                 <span>Produits</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  add
-                </span>
+                <span class="material-icons-sharp"> add </span>
                 <span>Add products</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  message
-                </span>
+                <span class="material-icons-sharp"> message </span>
                 <span>Messagerie </span>
                 <span class="message-count">22</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  settings
-                </span>
+                <span class="material-icons-sharp"> settings </span>
                 <span>Settings</span>
               </a>
             </li>
             <li class="item">
               <a href="#" class="active">
-                <span class="material-icons-sharp">
-                  report
-                </span>
+                <span class="material-icons-sharp"> report </span>
                 <span>Report</span>
               </a>
             </li>
             <li class="item">
               <a href="#">
-                <span class="material-icons-sharp">
-                  logout
-                </span>
+                <span class="material-icons-sharp"> logout </span>
                 <span>Log out</span>
               </a>
             </li>
@@ -111,15 +92,13 @@
       </div>
       <!-- ******************* MAIN CONTAINER ***************** -->
       <div class="main-container">
-        <h1 class="main-title"> Dashboard</h1>
+        <h1 class="main-title">Dashboard</h1>
         <!-- ???????????? INSIGHTS ???????????????????? -->
         <div class="insights">
           <div class="card">
             <div class="card-container">
               <div class="card-header">
-                <span class="material-icons-sharp">
-                  bar_chart
-                  </span>
+                <span class="material-icons-sharp"> bar_chart </span>
               </div>
               <!-- ????????????????? CIRCLE card1 ?????????????????? -->
               <div class="card-body">
@@ -146,9 +125,7 @@
           <div class="card">
             <div class="card-container">
               <div class="card-header">
-                <span class="material-icons-sharp">
-                  bar_chart
-                  </span>
+                <span class="material-icons-sharp"> bar_chart </span>
               </div>
               <div class="card-body">
                 <div class="card-info">
@@ -174,9 +151,7 @@
           <div class="card">
             <div class="card-container">
               <div class="card-header">
-                <span class="material-icons-sharp">
-                  bar_chart
-                  </span>
+                <span class="material-icons-sharp"> bar_chart </span>
               </div>
               <div class="card-body">
                 <div class="card-info">
@@ -205,7 +180,7 @@
             <h2 class="recent-order-title">Commandes Recentes</h2>
             <a href="#" class="show-all">Tout afficher</a>
           </div>
-            <!-- ????????????????????? TABLE ????????????????? -->
+          <!-- ????????????????????? TABLE ????????????????? -->
           <table>
             <thead>
               <tr>
@@ -263,11 +238,28 @@
           </table>
         </section>
       </div>
-      <div class="extrabar"></div>
-    </div>
-    
+      <div class="extrabar">
+        <header class="header-right">
+          <button class="toggle-menu-btn" id="openSidebar">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <!-- ????????????? THEME MODE ????????????????? -->
+          <div class="toggle-theme">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
 
+          <div class="profile-info">
+            <p>Salut, <strong>Yacine</strong></p>
+            <small>Admin</small>
+          </div>
+        </header>
+        <div class="profil-img">
+          <strong>Veuiller ajouter une img</strong>
+        </div>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

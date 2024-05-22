@@ -7,11 +7,11 @@
   --white: #fff;
   --light: #f3f4ee;
   --fuscha: hsl(334, 94%, 57%);
-  --desaturate-fuscha: hsla(334, 94%, 57%, 0.1);
-  --desaturate-fuscha-2: hsla(184, 46%, 57%, 0.15);
+  --desaturate-fuscha: hsla(334, 94%, 57%, 0.15);
+  --desaturate-fuscha-2: hsla(334, 94%, 57%, 0.1);
   --cyan: hsl(184, 46%, 57%);
-  --desaturate-cyan: hsla(184, 46%, 57%, 0;25);
-  --desaturate-cyan-2: hsla(184, 46%, 57%, 0;15);
+  --desaturate-cyan: hsla(184, 46%, 57%, 0.25);
+  --desaturate-cyan-2: hsla(184, 46%, 57%, 0.15);
   --light-blue: #bbeef1;
   --pinkless: #fff3e0;
   --yellow: #f1b813;
@@ -192,9 +192,9 @@ a:hover {
 .item a:hover .message-count,
 .item a:active .message-count,
 .item a.active .message-count {
-    background-color: var(--white);
-    color: var(--fuscha);
-    border: 1px solid var(--fuscha);
+  background-color: var(--white);
+  color: var(--fuscha);
+  border: 1px solid var(--fuscha);
 }
 
 /* ***************** MAIN CONTAINER ********************** */
@@ -205,163 +205,224 @@ a:hover {
 }
 
 .main-title {
-    margin-bottom: 3rem;
-    line-height: 1.8;
+  margin-bottom: 3rem;
+  line-height: 1.8;
 }
 /* ************************ CARD ********************** */
 .insights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 2rem;
 }
 
 .insights .card {
-    background-color: var(--white);
-    padding: 28px;
-    border-radius: 28px;
-    box-shadow: var(--box-shadow-card);
-    transition: box-shadow 0.3s ease-in-out;
+  background-color: var(--white);
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: var(--box-shadow-card);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .insights .card:hover {
-    box-shadow: var(--box-shadow-card-2);
+  box-shadow: var(--box-shadow-card-2);
 }
 
 .card .card-header span {
-    padding: 12px;
-    border-radius: var(--border-radius-rounded);
-    font-size: 28px;
-    margin-bottom: 18px;
+  padding: 12px;
+  border-radius: var(--border-radius-rounded);
+  font-size: 28px;
+  margin-bottom: 18px;
 }
-
 
 .insights .card:nth-child(1) .card-header span {
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
 }
 .insights .card:nth-child(2) .card-header span {
-    color: var(--fuscha);
-    border: 1px solid var(--fuscha);
+  color: var(--fuscha);
+  border: 1px solid var(--fuscha);
 }
 .insights .card:nth-child(3) .card-header span {
-    color: var(--cyan);
-    border: 1px solid var(--cyan);
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
 }
 
 .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .card-body .card-progress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 96px;
-    height: 96px;
-    border-radius: var(--border-radius-rounded);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: var(--border-radius-rounded);
 }
 
 /* ????????????????? SVG CIRCLE ??????????????????? */
 .card-body svg circle {
-    fill: none;
-    stroke-width: 16px;
-    /* calucler 2xpi x le rayon qui est de 36 ca donne 226, 2 */
-    stroke-dasharray: 226.2;
-    stroke-dashoffset: 100.2;
-    transform: translate(10px, 10px);
-    stroke-linecap: round;
-    transition: stroke-dashoffset 1s ease-in;
+  fill: none;
+  stroke-width: 16px;
+  /* calucler 2xpi x le rayon qui est de 36 ca donne 226, 2 */
+  stroke-dasharray: 226.2;
+  stroke-dashoffset: 100.2;
+  transform: translate(10px, 10px);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in;
 }
 
-.card-body .pourcentage{
-    position: absolute;
-    font-weight: 700;
+.card-body .pourcentage {
+  position: absolute;
+  font-weight: 700;
 }
 
 .card-footer {
-    font-size: 16px;
-    color: var(--text-color-third);
-    font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color-third);
+  font-weight: 600;
 }
 /* ????????????????????? RECENT ORDERS TABLE ?????????????????  */
 .recent-orders {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .recent-orders .ro-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .recent-orders .ro-title a {
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.2s ease-in;
-    padding-right: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+  padding-right: 28px;
 }
 
 .recent-orders .ro-title a:hover {
-    color: var(--fuscha);
+  color: var(--fuscha);
 }
 
 .recent-orders table {
-    width: 100%;
-    background-color: var(--white);
-    padding: var(--padding-card);
-    border-radius: var(--border-radius-card);
-    box-shadow: var(--box-shadow-card);
-    text-align: center;
-    transition: box-shadow 0.3S ease-in-out;
-    overflow: hidden;
-    border-spacing: 0;
+  width: 100%;
+  background-color: var(--white);
+  padding: var(--padding-card);
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--box-shadow-card);
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  border-spacing: 0;
 }
 
+.recent-orders table:hover {
+  box-shadow: var(--box-shadow-card-2);
+}
 
+.recent-orders tbody td,
+.recent-orders thead th {
+    padding: 12px 24px;
+}
+.recent-orders table tbody tr{
+    transition: 0.15s ease-in-out;
+}
+/* couleur de fond  */
+.recent-orders table tbody tr:nth-child(2n + 1) {
+    background-color: var(--desaturate-fuscha-2);
+}
 
+.recent-orders tbody tr:hover {
+    background-color: var(--desaturate-cyan-2) !important;
+}
 
 
 /* ****************** EXTRA BAR *************** */
 .extrabar {
   grid-area: extrabar;
+  padding: 20px 40px 20px 0;
+  transition: background-color .3s ease-in-out;
 }
+
+/* ????????????? EB HEADER RIGHT ?????????? */
+.extrabar .header-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.header-right .toggle-menu-btn {
+  display: none;
+}
+/* ???????????? DARK MODE ???????????? */
+.header-right .toggle-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--desaturate-cyan);
+  border-radius: var(--border-radius-8);
+  cursor: pointer;
+}
+
+.header-right .toggle-theme span {
+  font-size: 20px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+}
+
+.header-right .toggle-theme span:hover {
+  background-color: var(--desaturate-fuscha);
+  border-radius: var(--border-radius-8);
+}
+
+.header-right .toggle-theme span.active {
+  background-color: var(--fuscha);
+  border-radius: var(--border-radius-8);
+  color: var(--light);
+}
+
 /* ?????????????? SVG COLOR ???????????????? */
 
-.stroke-fuscha{
-    stroke: var(--fuscha);
+.stroke-fuscha {
+  stroke: var(--fuscha);
 }
-.stroke-yellow{
-    stroke: var(--yellow);
+.stroke-yellow {
+  stroke: var(--yellow);
 }
-.stroke-cyan{
-    stroke: var(--cyan);
+.stroke-cyan {
+  stroke: var(--cyan);
 }
 
 /* ?????????????? SVG TEXT COLOR ???????????????? */
 
-.text-fuscha{
-    color: var(--fuscha);
+.text-fuscha {
+  color: var(--fuscha);
 }
-.text-yellow{
-    color: var(--yellow);
+.text-yellow {
+  color: var(--yellow);
 }
-.text-cyan{
-    color: var(--cyan);
+.text-cyan {
+  color: var(--cyan);
 }
 /* ?????????????? SVG Background COLOR ???????????????? */
 
-.bg-fuscha{
-    background-color: var(--fuscha);
+.bg-fuscha {
+  background-color: var(--fuscha);
 }
-.bg-yellow{
-    background-color: var(--yellow);
+.bg-yellow {
+  background-color: var(--yellow);
 }
-.bg-cyan{
-    background-color: var(--cyan);
+.bg-cyan {
+  background-color: var(--cyan);
 }
