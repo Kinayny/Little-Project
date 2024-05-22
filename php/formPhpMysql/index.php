@@ -4,14 +4,14 @@ require_once('cnx.php');
 
 
 
-$sql = "SELECT Nom_client, Prenom_client, Mail_client, Id_client FROM magasin ORDER BY Id_client DESC";
-$rs_select = $cnx ->prepare($sql);
+$sql = "SELECT client_nom, client_prenom, client_mail, client_id FROM clients ORDER BY client_id DESC";
+
+$rs_select = $cnx->prepare($sql);
 $rs_select->execute();
 
 
-
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,19 +36,19 @@ $rs_select->execute();
 </tr>
     </thead>
     <tbody>
-<?php 
-while( $donnees = $rs_select-> fetch(PDO::FETCH_ASSOC)){
-?>
-        <tr>
-            <td><?= $donnees['Nom_client'] ?></td>
-            <td><?= $donnees['Prenom_client'] ?></td>
-            <td><?= $donnees['Mail_client'] ?></td>
-           <td><a href="modify.php?id=<?php echo $donnees['Id_client']; ?>">Modifier le client</a>
-           <a href="delete.php?id=<?php echo $donnees['Id_client']; ?>">Supprimer client</a>
-</td> 
-        </tr>
-<?php } ?>
 
+    <?php 
+    while($donnees = $rs_select->fetch(PDO::FETCH_ASSOC)) {
+    ?>
+    <tr>
+        <td><?= $donnees['client_nom']?></td>
+        <td><?= $donnees['client_prenom']?></td>
+        <td><?= $donnees['client_mail']?></td>
+
+
+
+    </tr>
+<?php  }?>
     </tbody>
 </table>
 

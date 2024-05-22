@@ -1,20 +1,20 @@
 <?php
 require_once('cnx.php');
 $message = '';
-// on pose une condityion pour verifier si l'utilisateur à cliquer sur le bouton
+// on pose une condition pour verifier si l'utilisateur à cliquer sur le bouton
 if(isset($_POST['create'])) {
 
-if( (empty($_POST['Nom_client'])) ||  (empty($_POST['Prenom_client']))  || (empty($_POST['Mail_client']))   ){
+if( (empty($_POST['client_nom'])) ||  (empty($_POST['client_prenom']))  || (empty($_POST['client_mail']))   ){
 $message = '<p class="info">Veuillez remplir les champs</p>';
 } else {
 // nous créons la requette sql pour créer un nouveau client et l'inserer dans notre table
-$sql="INSERT INTO `magasin` (`Nom_client`, `Prenom_client`, `Mail_client`) VALUES  (?,?,?)";
+$sql="INSERT INTO `clients` (`client_nom`, `client_prenom`, `client_mail`) VALUES  (?,?,?)";
 // on prepare l'insertion à la table
 $rs_insert = $cnx ->prepare($sql);
 
-$var_prenom = $_POST['Prenom_client'];
-$var_nom = $_POST['Nom_client'];
-$var_mail = $_POST['Mail_client'];
+$var_prenom = $_POST['client_prenom'];
+$var_nom = $_POST['client_nom'];
+$var_mail = $_POST['client_mail'];
 
 
 // on créer troi variables temporaire pour verifier la qualité des informations
@@ -43,11 +43,11 @@ $message = '<p class="green">Client créé</p>';
     <h1>Créer un nouveau client</h1>
     
     <form action="" method="post">
-        <input type="text" name="Prenom_client" placeholder="Prenom">
+        <input type="text" name="client_nom" placeholder="Nom">
         <br><br>
-        <input type="text" name="Nom_client" placeholder="Nom">
+        <input type="text" name="client_prenom" placeholder="Prenom">
         <br><br>
-        <input type="email" name="Mail_client" placeholder="Email">
+        <input type="email" name="client_mail" placeholder="Email">
         <br><br>
         <?= $message; ?>
         <br>
