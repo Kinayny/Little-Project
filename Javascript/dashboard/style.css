@@ -392,6 +392,27 @@ a:hover {
   color: var(--light);
 }
 
+.header-right .profile{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right .profile .profile-info {
+  font-size: 1rem;
+}
+
+.profil-img {
+  border: 1px solid red;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border-radius: var(--border-radius-rounded);
+  overflow: hidden;
+}
 /* ?????????????? SVG COLOR ???????????????? */
 
 .stroke-fuscha {
