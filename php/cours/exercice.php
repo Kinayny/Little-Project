@@ -36,7 +36,7 @@
     $degatHache = 70;
     $degatEpee = 30;
 
-    $arme = "Hache";
+    $arme = "Haches";
 
 
     
