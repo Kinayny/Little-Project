@@ -47,6 +47,43 @@
         } else {
             echo "Vous devez equippé une arme";
         }
+
+          // $alphabet = "k";
+
+
+    // $result = match ($alphabet) {
+    //     1 => "a",
+    //     2 => "b",
+    //     3 => "c",
+
+    //     default => throw new Exception("la lettre n'est pas bonne"),
+    //     };
+
+    //     echo $result;
+
+
+
+                // switch
+    // $dep = 302;
+
+    // switch ($dep) {
+    //     case '94':
+    //         echo "val de marne";
+    //         break;
+    //     case '75':
+    //         echo "paris";
+    //         break;
+    //     case '30':
+    //         echo "gard";
+    //         break;
+    //     case '74':
+    //         echo 'haute savoie';
+    //         break;
+        
+    //     default:
+    //         echo 'departement non reconnu';
+    //         break;
+    // }
     ?>
 </body>
 </html>
