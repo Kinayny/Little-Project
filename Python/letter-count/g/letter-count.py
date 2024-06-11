@@ -7,4 +7,4 @@ def compte_lettre(mot:str, lettre:str) -> str:
     return nombre_de_lettre
 
 
-print(compte_lettre("blablaklsdfgjmll","l"))
+print(compte_lettre("sdfgsghsh","l"))
