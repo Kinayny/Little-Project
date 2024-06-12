@@ -37,9 +37,37 @@
     $degatEpee = 30;
 
     $arme = "Haches";
+        // for ($i=1; $i <= 7 ; $i++) { 
+    //     echo "<h$i>Ceci est un titre h$i<h$i/>";
+    // }
 
+        // function afficher_nombres(...$nombres){
+        //     foreach ($nombres as $choix_nombre) {
+        //         echo $choix_nombre;
+        //         echo '<br>';
+        //     }
+        // }
 
+        // $valeurs = afficher_nombres(1,2,3,4,5,6,7,8,9,10);
+
+        function somme_nombre(...$valeurs){
+            return array_sum($valeurs);
+        }
+
+        $total = somme_nombre(10,20,30,40,50);
+        echo "le total est: ".$total;
+
+        function display_names($prenom, $nom = "Mercier"){
+            if($nom != "Mercier"){
+                echo "Votre nom est $nom et votre prenom est $prenom";
+                echo'<br>';
+            }else {
+                echo "Votre prenom est $prenom";
+            }
+        }
     
+        display_names("Kinai","Mercider");
+
     if($arme === $arme1){
             echo "Vous avez recus un coup de Hache de: ";
         } elseif ($arme === $arme2){
