@@ -145,7 +145,75 @@
     //         echo 'departement non reconnu';
     //         break;
     // }
+
+
+
+
+    if (isset($_POST['envoyer'])) {
+
+if(empty($_POST['nom'])){
+    echo "veuillez saisir votre nom!";
+}elseif(empty($_POST["email"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+    echo "veuillez saisir votre e-mail!";
+}elseif(empty($_POST['profession'])){
+    echo "Veuillez selectionner une professions !";
+}else{
+
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $profession = $_POST['profession'];
+    echo "le nom est :$nom et sa profession est : $profession sont email est : $email";
+}
+}else{
+echo "Veuillez valider votre formulaire.";
+}
+
+
+if (isset($_POST['envoyer'])) {
+
+if(empty($_POST['nom'])){
+    echo "veuillez saisir votre nom!";
+}elseif(empty($_POST["email"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+    echo "veuillez saisir votre e-mail!";
+}elseif(empty($_POST['profession'])){
+    echo "Veuillez selectionner une professions !";
+}else{
+
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $profession = $_POST['profession'];
+    echo "le nom est :$nom et sa profession est : $profession sont email est : $email";
+}
+}else{
+echo "Veuillez valider votre formulaire.";
+}
+
+
+<?php
+
+    if (isset($_POST['envoyer'])) {
+
+        if(empty($_POST['nom'])){
+            echo "veuillez saisir votre nom!";
+        }elseif(empty($_POST["email"]) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+            echo "veuillez saisir votre e-mail!";
+        }elseif(empty($_POST['profession'])){
+            echo "Veuillez selectionner une professions !";
+        }else{
+
+            $nom = $_POST['nom'];
+            $email = $_POST['email'];
+            $profession = $_POST['profession'];
+            echo "le nom est :$nom et sa profession est : $profession sont email est : $email";
+        }
+    }else{
+        echo "Veuillez valider votre formulaire.";
+    }
+
+
+
     ?>
+
 </body>
 </html>
     
