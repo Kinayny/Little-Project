@@ -210,8 +210,32 @@ echo "Veuillez valider votre formulaire.";
         echo "Veuillez valider votre formulaire.";
     }
 
+//     <form action="index.php" method="post" enctype="multipart/form-data" style="display:flex; justify-content: center;">
+//     <fieldset style="width: 300px; text-align: center;justify-content:center;" >
+//         <legend>
+//             <b>Transfert de fichier</b>
+//         </legend>
+//         <p>
+//             <input type="hidden" name="MAX_FILE_SIZE" value="1">
+//             <label for="fichier">Transfert de fichier:</label>
+//             <input id="fichier" type="file" name="fichier">
+//         </p>
+        
+//         <p>
+//             <input type="submit" name="fichier_transmis" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
+//             <input type="reset" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
+//         </p>
+//             </fieldset>
+//    </form>
 
+    
+    if(isset($_POST['fichier_transmis'])){
 
+        $path = 'C:\Users\yacin\Documents\Projects\test\downloadExer\ ';
+        move_uploaded_file($_FILES["fichier"] ['tmp_name'], $path.$_FILES['fichier'] ['name']);
+    }
+
+     
     ?>
 
 </body>
