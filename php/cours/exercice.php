@@ -235,9 +235,42 @@ echo "Veuillez valider votre formulaire.";
         move_uploaded_file($_FILES["fichier"] ['tmp_name'], $path.$_FILES['fichier'] ['name']);
     }
 
-     
-    ?>
 
+    // require "Utilisateurs.php";
+    
+    // $membre1 = new Utilisateurs();
+    class Utilisateurs {
+        public $nom;
+        public $prenom;
+        public $age;
+        public $email;
+    
+        public function seConnecter(){
+            echo "Je suis inscrit sur votre site web, je peux donc me connecter";
+        }
+    
+        public function seDeconnecter(){
+            echo "je me deconnecte";
+        }
+    }
+    
+    // $utilisateurs1 = new Utilisateurs();
+    // $utilisateurs1->nom='Ekxecut';
+    // $utilisateurs1->prenom="Kinai";
+    
+    // echo "le prenom de l'utilisateur 1 est: ".$utilisateurs1->nom;
+    // echo "<br> <br>";
+    // echo "le nom de l'utilisateur 1 est: ".$utilisateurs1->prenom;
+    
+
+    $membre1->prenom = "yass";
+    $membre1->nom = "kinai";
+    
+    echo "le prenom de l'utilisateur 1 est: ".$membre1->nom;
+    echo "<br> <br>";
+    echo "le nom de l'utilisateur 1 est: ".$membre1->prenom;
+    
+    ?>
 </body>
 </html>
     
