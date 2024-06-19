@@ -253,7 +253,42 @@ echo "Veuillez valider votre formulaire.";
             echo "je me deconnecte";
         }
     }
-    
+  
+
+
+class Utilisateyurs {
+    private string $nom;
+    private string $prenom;
+    private int $age;
+    private string $email;
+
+    private function seConnecter(){
+        echo "Je suis inscrit sur votre site web, je peux donc me connecter";
+    }
+
+    public function seDeconnecter(){
+        echo "je me deconnecte";
+    }
+
+    public function initialiserNom($nom){
+        $this->nom = $nom;
+    }
+
+    public function recupererNom(){
+        echo "Nom: ".$this->nom;
+    }
+
+    public function initialiser($nom, $prenom, $age, $email){
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->age = $age;
+        $this->email = $email;
+
+    }
+    public function toutrecuperer(){
+       return "$this->nom, $this->prenom, $this->age, $this->email";
+    }
+}
     // $utilisateurs1 = new Utilisateurs();
     // $utilisateurs1->nom='Ekxecut';
     // $utilisateurs1->prenom="Kinai";
