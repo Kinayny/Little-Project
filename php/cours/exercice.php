@@ -37,50 +37,53 @@
     $degatEpee = 30;
 
     $arme = "Haches";
-        // for ($i=1; $i <= 7 ; $i++) { 
-    //     echo "<h$i>Ceci est un titre h$i<h$i/>";
-    // }
+        for ($i=1; $i <= 7 ; $i++) { 
+        echo "<h$i>Ceci est un titre h$i<h$i/>";
+    }
 
-        // function afficher_nombres(...$nombres){
-        //     foreach ($nombres as $choix_nombre) {
-        //         echo $choix_nombre;
-        //         echo '<br>';
-        //     }
-        // }
+        function afficher_nombres(...$nombres){
+            foreach ($nombres as $choix_nombre) {
+                echo $choix_nombre;
+                echo '<br>';
+            }
+        }
 
-        // $valeurs = afficher_nombres(1,2,3,4,5,6,7,8,9,10);
-    //     <?php 
+        $valeurs = afficher_nombres(1,2,3,4,5,6,7,8,9,10);
+    
+
+        
     //     <h1 style="text-align: center;">hello</h1>
     //     <br>
     //     <br>
     //     <br>
-    
-    //    <form action="traitementForm.php" method="post" style="display:flex; justify-content: center;">
-    //     <fieldset style="width: 300px; text-align: center;justify-content:center;" >
-    //         <legend>
-    //             <b>Traitement du formulaire</b>
-    //         </legend>
-    //         <p>
-    //             <label for="nom">Nom:</label>
-    //             <input id="nom" type="text" name="nom" placeholder="Entrez votre nom">
-    //         </p>
-    //         <label for="email">E-mail</label>
-    //         <input id="email" type="email" name="email">
-    //         <p>
-    //             <label for="profession:">Profession</label>
-    //             <select id="profession" name="profession">
-    //                 <option value="Enseignant">Enseignant</option>
-    //                 <option value="dev">dev</option>
-    //                 <option value="policier">policer</option>
-    //             </select>
-    //         </p>
-    //         <p>
-    //             <input type="submit" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
-    //             <input type="reset" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
-    //         </p>
-    //             </fieldset>
-    //    </form>
     //     ?>
+    
+    // //    <form action="traitementForm.php" method="post" style="display:flex; justify-content: center;">
+    // //     <fieldset style="width: 300px; text-align: center;justify-content:center;" >
+    // //         <legend>
+    // //             <b>Traitement du formulaire</b>
+    // //         </legend>
+    // //         <p>
+    // //             <label for="nom">Nom:</label>
+    // //             <input id="nom" type="text" name="nom" placeholder="Entrez votre nom">
+    // //         </p>
+    // //         <label for="email">E-mail</label>
+    // //         <input id="email" type="email" name="email">
+    // //         <p>
+    // //             <label for="profession:">Profession</label>
+    // //             <select id="profession" name="profession">
+    // //                 <option value="Enseignant">Enseignant</option>
+    // //                 <option value="dev">dev</option>
+    // //                 <option value="policier">policer</option>
+    // //             </select>
+    // //         </p>
+    // //         <p>
+    // //             <input type="submit" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
+    // //             <input type="reset" style="border-radius: 40px; padding: 6px;background:none;cursor:pointer;">
+    // //         </p>
+    // //             </fieldset>
+    // //    </form>
+    // //     ?>
     
 
         function somme_nombre(...$valeurs){
