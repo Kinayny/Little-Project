@@ -83,8 +83,63 @@
     // //         </p>
     // //             </fieldset>
     // //    </form>
-    // //     ?>
-    
+    <!-- // //     ?> -->
+    <?php
+
+    class Car{
+        public $mark;
+        public $model;
+        public $year;
+        public $price;
+
+        public function __construct($mark, $model, $year, $price){
+            $this->mark = $mark;
+            $this->model = $model;
+            $this->year = $year;
+            $this->price = $price;
+        }
+        /**
+   =                            Getter
+         */
+        public function getMark(){
+            return $this->mark;
+        }
+        public function getModel(){
+            return $this->model;
+        }
+        public function getYear(){
+            return $this->year;
+        }
+        public function getPrice(){
+            return $this->price;
+        }
+
+        //        SETTER
+
+        public function setMark($mark){
+            $this->mark = $mark;
+        }
+        public function setModel($model){
+            $this->model = $model;
+        }
+        public function setYear($year){
+            $this->year = $year;
+        }
+        public function setPrice($price){
+            $this->price = $price;
+        }
+        public function display(){
+            echo "Mark: ".$this->getMark()."<br>";
+            echo "Model: ".$this->getModel()."<br>";
+            echo "Year: ".$this->getYear()."<br>";
+            echo "Price: ".$this->getPrice()."<br>";
+        }
+    }
+    $ferrari = new Car("ferrari","sport",90,200);
+
+    $ferrari->display();
+
+?>
 
         function somme_nombre(...$valeurs){
             return array_sum($valeurs);
