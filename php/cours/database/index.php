@@ -9,6 +9,10 @@
 </head>
 <body>
 <a href="insertion.php">Inserer</a>
+<br>
+<br>
+<a href="display.php">Inserer</a>
+
 
 </body>
 </html>
