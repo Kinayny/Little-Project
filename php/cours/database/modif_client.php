@@ -43,13 +43,42 @@
             </tr>
         </table>
         </fieldset>
-
+        <input type="hidden" name="id_client" value="<?=$id_client?>">
     </form>
     <?php
 
         $result->closeCursor();
-    }else{
-        echo'probleme';
+    }elseif(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['age']) && isset($_POST['adress']) && isset($_POST['ville']) && isset($_POST['email'])){
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $age = $_POST['age'];
+        $adress = $_POST['adress'];
+        $ville = $_POST['ville'];
+        $email = $_POST['email'];
+
+        $id_client = $_POST['id_client'];
+
+        $request = $bddPDO->prepare('UPDATE clients SET nom=:nom, prenom=:prenom, age=:age, adresse=:adresse, ville=:ville, email=:email WHERE id_client=:id_client');
+
+        $request->bindvalue(':nom', $nom);
+        $request->bindvalue(':prenom', $prenom);
+        $request->bindvalue(':age', $age);
+        $request->bindvalue(':adresse', $adress);
+        $request->bindvalue(':ville', $ville);
+        $request->bindvalue(':email', $email);
+        $request->bindvalue(':id_client', $id_client);
+
+        $result = $request->execute();
+
+        if(!$result){
+            echo"Un probleme est survenue";
+        }else{
+            echo "Update Success";
+        }
+
+        }else{
+            echo "Modifier vos coordonées";
+
     }
 
         ?>
