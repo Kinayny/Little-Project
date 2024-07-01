@@ -10,7 +10,7 @@
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                     <div class="card-body">
 
-                                        <form>
+                                        <form action="" method="post" enctype="multipart/form-data">
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
@@ -43,13 +43,28 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
+                                                        <label for="inputFirstName">User name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="photo">Add Photo</label>
+                                                        <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+                                                        <input id="photo" type="file">
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.php">Create Account</a></div>
+                                                <div class="d-grid"><input type="submit" name="inscription" value="Create Account" class="btn btn-primary btn-block"></div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.php">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="login.php">Have an account? Go to login</a href="login.php"></div>
                                     </div>
                                 </div>
                             </div>
